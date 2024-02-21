@@ -1,0 +1,57 @@
+Script started on 2024-02-21 21:57:35+07:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="9"]
+[?2004h]0;odinstudent@Xubuntu: ~/repos/fso-part12[01;32modinstudent@Xubuntu[00m:[01;34m~/repos/fso-part12[00m$ cd todo-app/todo-backend/
+[?2004l[?2004h]0;odinstudent@Xubuntu: ~/repos/fso-part12/todo-app/todo-backend[01;32modinstudent@Xubuntu[00m:[01;34m~/repos/fso-part12/todo-app/todo-backend[00m$ docker so[K[Kcompose -f  docker-compose.c[Kdev.yml up -d
+[?2004l[1A[1B[0G[?25l[+] Running 2/0
+ [32m✔[0m Container todo-backend-redis-1  [32mCre...[0m                                  [34m0.0s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mCre...[0m                                  [34m0.0s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-redis-1  [32mCre...[0m                                  [34m0.0s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mCre...[0m                                  [34m0.0s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-redis-1  [32mCre...[0m                                  [34m0.0s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mCre...[0m                                  [34m0.0s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-redis-1  [32mCre...[0m                                  [34m0.0s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mCre...[0m                                  [34m0.0s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-redis-1  [32mCre...[0m                                  [34m0.0s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mCre...[0m                                  [34m0.0s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-redis-1  [32mCre...[0m                                  [34m0.0s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mCre...[0m                                  [34m0.0s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-redis-1  [32mSta...[0m                                  [34m0.0s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mCre...[0m                                  [34m0.0s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-redis-1  [32mSta...[0m                                  [34m0.0s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mSta...[0m                                  [34m0.0s [0m
+[?25h[?2004h]0;odinstudent@Xubuntu: ~/repos/fso-part12/todo-app/todo-backend[01;32modinstudent@Xubuntu[00m:[01;34m~/repos/fso-part12/todo-app/todo-backend[00m$ docker exec -it to do-backend-redis-1 ab[K[Kbash
+[?2004l[?2004hroot@f6dca52b4680:/data# re
+read             realpath         redis-sentinel   reset
+readarray        redis-benchmark  redis-server     resize2fs
+readlink         redis-check-aof  remove-shell     resizepart
+readonly         redis-check-rdb  rename.ul        return
+readprofile      redis-cli        renice           rev
+root@f6dca52b4680:/data# redis-cli 
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KEYS[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "added_todos"
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET a[0;90;49m key[0m[21C[0K127.0.0.1:6379> GET ad[0;90;49m key[0m[22C[0K127.0.0.1:6379> GET a[0;90;49m key[0m[21C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET "[21C[0K127.0.0.1:6379> GET "a[22C[0K127.0.0.1:6379> GET "ad[23C[0K127.0.0.1:6379> GET "add[24C[0K127.0.0.1:6379> GET "ad[23C[0K127.0.0.1:6379> GET "a[22C[0K127.0.0.1:6379> GET "[21C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET a[0;90;49m key[0m[21C[0K127.0.0.1:6379> GET ad[0;90;49m key[0m[22C[0K127.0.0.1:6379> GET add[0;90;49m key[0m[23C[0K127.0.0.1:6379> GET adde[0;90;49m key[0m[24C[0K127.0.0.1:6379> GET added[0;90;49m key[0m[25C[0K127.0.0.1:6379> GET added_[0;90;49m key[0m[26C[0K127.0.0.1:6379> GET added_t[0;90;49m key[0m[27C[0K127.0.0.1:6379> GET added_to[0;90;49m key[0m[28C[0K127.0.0.1:6379> GET added_tod[0;90;49m key[0m[29C[0K127.0.0.1:6379> GET added_todo[0;90;49m key[0m[30C[0K127.0.0.1:6379> GET added_todos[0;90;49m key[0m[31C[0K127.0.0.1:6379> GET added_todos[31C
+"2"
+127.0.0.1:6379> [0K127.0.0.1:6379> S[17C[0K127.0.0.1:6379> SE[18C[0K127.0.0.1:6379> SET[19C[0K127.0.0.1:6379> SET [0;90;49mkey value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT uni[0m[20C[0K127.0.0.1:6379> SET a[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT u[0m[21C[0K127.0.0.1:6379> SET ad[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT [0m[22C[0K127.0.0.1:6379> SET add[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT[0m[23C[0K127.0.0.1:6379> SET adde[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXA[0m[24C[0K127.0.0.1:6379> SET added[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EX[0m[25C[0K127.0.0.1:6379> SET addedT[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|E[0m[26C[0K127.0.0.1:6379> SET added[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EX[0m[25C[0K127.0.0.1:6379> SET added_[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|E[0m[26C[0K127.0.0.1:6379> SET added_t[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|[0m[27C[0K127.0.0.1:6379> SET added_to[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds[0m[28C[0K127.0.0.1:6379> SET added_tod[0;90;49m key value [NX|XX] [GET] [EX seconds|PX millisecond[0m[29C[0K127.0.0.1:6379> SET added_todo[0;90;49m key value [NX|XX] [GET] [EX seconds|PX millisecon[0m[30C[0K127.0.0.1:6379> SET added_todos[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseco[0m[31C[0K127.0.0.1:6379> SET added_todos [0;90;49mvalue [NX|XX] [GET] [EX seconds|PX milliseconds|[0m[32C[0K127.0.0.1:6379> SET added_todos "[33C[0K127.0.0.1:6379> SET added_todos "0[34C[0K127.0.0.1:6379> SET added_todos "[33C[0K127.0.0.1:6379> SET added_todos "9[34C[0K127.0.0.1:6379> SET added_todos "90[35C[0K127.0.0.1:6379> SET added_todos "900[36C[0K127.0.0.1:6379> SET added_todos "9001[37C[0K127.0.0.1:6379> SET added_todos "900[36C[0K127.0.0.1:6379> SET added_todos "90[35C[0K127.0.0.1:6379> SET added_todos "9[34C[0K127.0.0.1:6379> SET added_todos "[33C[0K127.0.0.1:6379> SET added_todos [0;90;49mvalue [NX|XX] [GET] [EX seconds|PX milliseconds|[0m[32C[0K127.0.0.1:6379> SET added_todos[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseco[0m[31C[0K127.0.0.1:6379> SET added_todos [0;90;49mvalue [NX|XX] [GET] [EX seconds|PX milliseconds|[0m[32C[0K127.0.0.1:6379> SET added_todos "[33C[0K127.0.0.1:6379> SET added_todos "9[34C[0K127.0.0.1:6379> SET added_todos "90[35C[0K127.0.0.1:6379> SET added_todos "900[36C[0K127.0.0.1:6379> SET added_todos "9001[37C[0K127.0.0.1:6379> SET added_todos "9001"[0;90;49m value [NX|XX] [GET] [EX seconds|PX millis[0m[38C[0K127.0.0.1:6379> SET added_todos "9001"[38C
+OK
+127.0.0.1:6379> [0K127.0.0.1:6379> SET added_todos "9001"[0;90;49m value [NX|XX] [GET] [EX seconds|PX millis[0m[38C[0K127.0.0.1:6379> GET added_todos[0;90;49m key[0m[31C[0K127.0.0.1:6379> GET added_todos[31C
+"9001"
+127.0.0.1:6379> [0K127.0.0.1:6379> D[17C[0K127.0.0.1:6379> DE[18C[0K127.0.0.1:6379> DEL[19C[0K127.0.0.1:6379> DEL [0;90;49mkey [key ...][0m[20C[0K127.0.0.1:6379> DEL a[0;90;49m key [key ...][0m[21C[0K127.0.0.1:6379> DEL ad[0;90;49m key [key ...][0m[22C[0K127.0.0.1:6379> DEL add[0;90;49m key [key ...][0m[23C[0K127.0.0.1:6379> DEL adde[0;90;49m key [key ...][0m[24C[0K127.0.0.1:6379> DEL added[0;90;49m key [key ...][0m[25C[0K127.0.0.1:6379> DEL added_[0;90;49m key [key ...][0m[26C[0K127.0.0.1:6379> DEL added_t[0;90;49m key [key ...][0m[27C[0K127.0.0.1:6379> DEL added_to[0;90;49m key [key ...][0m[28C[0K127.0.0.1:6379> DEL added_tod[0;90;49m key [key ...][0m[29C[0K127.0.0.1:6379> DEL added_todo[0;90;49m key [key ...][0m[30C[0K127.0.0.1:6379> DEL added_tod[0;90;49m key [key ...][0m[29C[0K127.0.0.1:6379> DEL added_todo[0;90;49m key [key ...][0m[30C[0K127.0.0.1:6379> DEL added_todos[0;90;49m key [key ...][0m[31C[0K127.0.0.1:6379> DEL added_todos[31C
+(integer) 1
+127.0.0.1:6379> [0K127.0.0.1:6379> DEL added_todos[0;90;49m key [key ...][0m[31C[0K127.0.0.1:6379> GET added_todos[0;90;49m key[0m[31C[0K127.0.0.1:6379> GET added_todos[31C
+(nil)
+127.0.0.1:6379> [0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> exit[20C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> [16C
+[?2004hroot@f6dca52b4680:/data# exit
+[?2004lexit
+[?2004h]0;odinstudent@Xubuntu: ~/repos/fso-part12/todo-app/todo-backend[01;32modinstudent@Xubuntu[00m:[01;34m~/repos/fso-part12/todo-app/todo-backend[00m$ docker stop todo-backend-mongo-1  [Ktodo-backend-n[Kredis-1 
+[?2004ltodo-backend-mongo-1
+todo-backend-redis-1
+[?2004h]0;odinstudent@Xubuntu: ~/repos/fso-part12/todo-app/todo-backend[01;32modinstudent@Xubuntu[00m:[01;34m~/repos/fso-part12/todo-app/todo-backend[00m$ exit
+[?2004lexit
+
+Script done on 2024-02-21 22:05:15+07:00 [COMMAND_EXIT_CODE="0"]
