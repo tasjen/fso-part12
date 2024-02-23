@@ -2,7 +2,8 @@ version: '3.8' # Version 3.8 is quite new and should work
 
 services:
   app: # The name of the service, can be anything
-    image: nginx-todo-frontend # Declares which image to use
+    image: todo-frontend-prod # Declares which image to use
     build: . # Declares where to build if image is not found
     ports: # Declares the ports to publish
       - 8000:80
+    container_name: todo-frontend-prod
