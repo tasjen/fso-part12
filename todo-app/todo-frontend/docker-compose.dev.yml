@@ -1,13 +1,12 @@
-version: '3.8' # Version 3.8 is quite new and should work
+version: '3.8'
 
 services:
-  app: # The name of the service, can be anything
-    image: todo-frontend-dev # Declares which image to use
+  devcontainer:
+    image: todo-frontend-dev
     build:
       context: . # The context will pick this directory as the "build context"
       dockerfile: Dockerfile.dev
     volumes:
-      - ./:/usr/src/app
-    ports: # Declares the ports to publish
+      - ./:/workspace/todo-frontend-dev
+    ports:
       - 8000:3000
-    container_name: todo-frontend-dev

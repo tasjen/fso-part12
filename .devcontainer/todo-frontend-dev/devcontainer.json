@@ -1,0 +1,7 @@
+{
+  "name": "Todo Frontend Dev Container",
+  "dockerComposeFile": "../../todo-app/todo-frontend/docker-compose.dev.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace/todo-frontend-dev",
+  "shutdownAction": "none"
+}
